@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundChecker;
-    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask groundLayer; 
 
     // Update is called once per frame
     void Update()
