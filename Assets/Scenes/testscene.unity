@@ -135,6 +135,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 405344685230488984, guid: 7989d21b026cf594987ad129231b86a4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405344685230488984, guid: 7989d21b026cf594987ad129231b86a4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2942319244458485540, guid: 7989d21b026cf594987ad129231b86a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.26
@@ -450,9 +458,9 @@ MonoBehaviour:
   platformPrefabs:
   - {fileID: 686846107}
   player: {fileID: 1547840896}
-  spawnHeight: 15
-  minX: -5
-  maxX: 5
+  spawnHeight: 19
+  minX: -8
+  maxX: 8
 --- !u!212 &1135579941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -517,8 +525,8 @@ Transform:
   m_GameObject: {fileID: 1135579939}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.12, y: -0.66, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.12, y: 1.55, z: 0}
+  m_LocalScale: {x: 1, y: 1.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -789,7 +797,7 @@ Transform:
   m_GameObject: {fileID: 1594702729}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7964, y: -6.4806, z: 0}
+  m_LocalPosition: {x: -0.06, y: -8.5, z: 0}
   m_LocalScale: {x: 21.802576, y: 12.729572, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
