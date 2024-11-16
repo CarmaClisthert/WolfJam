@@ -1,10 +1,14 @@
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class Jump : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float jump;
-    public float moveSpeed; // Speed of horizontal movement
+    private float horizontal;
+    public float jump = 16f;
+    private bool isFacingRight = true;
+    public float speed = 8f; // Speed of horizontal movement
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +27,19 @@ public class Jump : MonoBehaviour
 
         // Handle horizontal movement
         float moveInput = Input.GetAxis("Horizontal"); // Get input for horizontal movement (A/D or Left/Right keys)
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+
+        
+    }
+
+    private void flip()
+    {
+        if (isFacingRight && horizontal < 0f || isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
     }
 }
