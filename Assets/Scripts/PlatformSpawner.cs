@@ -4,7 +4,7 @@ public class PlatformSpawner : MonoBehaviour
 {
     public GameObject[] platformPrefabs;
     public Transform player;
-    public float spawnHeight = 15f;
+    public float spawnHeight = 20f;
     public float minX = -5f, maxX = 5f;
 
     private float nextSpawnY = 0f;
@@ -26,6 +26,6 @@ public class PlatformSpawner : MonoBehaviour
         );
 
         Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length)], spawnPosition, Quaternion.identity);
-        nextSpawnY += Random.Range(2f, 4f); // Adjust gap between platforms
+        nextSpawnY += Random.Range(3f, 4f); // Adjust gap between platforms
     }
 }
