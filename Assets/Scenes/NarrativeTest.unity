@@ -471,6 +471,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 83dea656b463e5844a113532edc3cc7e, type: 3}
   - {fileID: 21300000, guid: e1a2fe658ab2f9b47be7c644e368743d, type: 3}
   - {fileID: 21300000, guid: ba5b2d44b66ba3e4998154d236bb1d8f, type: 3}
+  namenum: 0
+  occupationnum: 0
+  barknum: 0
+  goonnum: 0
+  goonname: 
+  goonoccupation: 
+  goonbark: 
+  goonsprite: {fileID: 1324195756}
+  goonimage: {fileID: 0}
 --- !u!212 &1324195756
 SpriteRenderer:
   m_ObjectHideFlags: 0

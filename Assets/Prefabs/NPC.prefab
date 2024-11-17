@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3324939787370089948}
   - component: {fileID: 5845232065657620187}
   - component: {fileID: 3272112922826139137}
+  - component: {fileID: 7427256944777191098}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -178,3 +179,41 @@ MonoBehaviour:
   isBanished: 0
   playerTransform: {fileID: 0}
   isFollowing: 1
+  offset: {x: 0, y: 0, z: 0}
+--- !u!114 &7427256944777191098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138429532520339603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04f70f3e69e58e4da98583e9c87ea0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name:
+  - L
+  - A
+  - K
+  occupation:
+  - f
+  - g
+  - q
+  bark:
+  - sdfk
+  - agergr
+  - rgrh5
+  goon:
+  - {fileID: 21300000, guid: e1a2fe658ab2f9b47be7c644e368743d, type: 3}
+  - {fileID: 21300000, guid: ba5b2d44b66ba3e4998154d236bb1d8f, type: 3}
+  - {fileID: 21300000, guid: 83dea656b463e5844a113532edc3cc7e, type: 3}
+  namenum: 0
+  occupationnum: 0
+  barknum: 0
+  goonnum: 0
+  goonname: 
+  goonoccupation: 
+  goonbark: 
+  goonsprite: {fileID: 8573288585707351559}
+  goonimage: {fileID: 0}

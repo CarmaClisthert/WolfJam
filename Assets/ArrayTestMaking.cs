@@ -21,9 +21,9 @@ public class ArrayTestMaking : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        namenum = Random.RandomRange(0, 72);
-        occupationnum = Random.Range(0, 71);
-        barknum = Random.Range(0, 32);
+        namenum = Random.RandomRange(0, 3);
+        occupationnum = Random.Range(0, 3);
+        barknum = Random.Range(0, 3);
         goonnum = Random.RandomRange(0, 2);
 
         goonname = name[namenum];
