@@ -3,9 +3,13 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-  //  public Dialogue dialogue;
+    //  public Dialogue dialogue;
 
-   // public GameObject dialogueBox;
+    // public GameObject dialogueBox;
+
+    public Transform playerTransform;
+
+    public bool isFollowing = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
