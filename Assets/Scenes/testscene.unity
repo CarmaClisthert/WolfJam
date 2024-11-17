@@ -461,6 +461,7 @@ MonoBehaviour:
   spawnHeight: 19
   minX: -8
   maxX: 8
+  npcSpawner: {fileID: 1566647516}
 --- !u!212 &1135579941
 SpriteRenderer:
   m_ObjectHideFlags: 0
