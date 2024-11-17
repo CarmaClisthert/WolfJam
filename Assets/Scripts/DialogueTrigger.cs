@@ -41,14 +41,14 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-      //  dialogueBox.SetActive(false);
+     //   dialogueBox.SetActive(false);
     }
 
 
 
     private void Update()
     {
-        if (isFollowing && playerTransform != null)
+        if (isFollowing && playerTransform != null && isBanished == false)
         {
             Vector3 followPosition = playerTransform.position + offset;
             transform.position = Vector3.Lerp(transform.position, followPosition, Time.deltaTime * 5f);

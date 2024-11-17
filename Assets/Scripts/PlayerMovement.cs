@@ -13,11 +13,15 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundChecker;
-    [SerializeField] private LayerMask groundLayer; 
+    [SerializeField] private LayerMask groundLayer;
+
+    public GameObject dialogueBox;
 
     private Animator animator;
 
     public bool isGrounded;
+
+    public DialogueTrigger dialogueTrigger;
 
     private void Start()
     {
@@ -94,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void CutScene()
     {
-        var gooncontainer = GameObject.Find("UIPrefab");
+        // var gooncontainer = GameObject.Find("UIPrefab");
+        //dialogueBox.SetActive(true);
+        dialogueTrigger.isBanished = true;
     }
 }

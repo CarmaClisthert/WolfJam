@@ -1295,6 +1295,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  dialogueBox: {fileID: 1599807984}
   isGrounded: 0
 --- !u!50 &1547840898
 Rigidbody2D:
