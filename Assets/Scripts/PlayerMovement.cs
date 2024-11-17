@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
@@ -26,7 +27,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         
-        
+        if (Input.GetKey(KeyCode.L) || (Input.GetKey(KeyCode.F)))
+        {
+            CutScene();
+        }
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -86,5 +90,10 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    private void CutScene()
+    {
+        var gooncontainer = GameObject.Find("UIPrefab");
     }
 }
