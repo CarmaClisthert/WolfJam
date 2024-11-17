@@ -19,11 +19,8 @@ public class PlatformSpawner : MonoBehaviour
 
     void SpawnPlatform()
     {
-        Vector3 spawnPosition = new Vector3(
-            Random.Range(minX, maxX),
-            nextSpawnY,
-            0
-        );
+        Vector3 spawnPosition = new Vector3(Random.Range(minX, maxX),nextSpawnY,0);
+        
 
         Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length)], spawnPosition, Quaternion.identity);
         nextSpawnY += Random.Range(3f, 4f); // Adjust gap between platforms
