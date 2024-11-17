@@ -485,6 +485,7 @@ MonoBehaviour:
   spawnHeight: 10
   minX: -5
   maxX: 5
+  npcSpawner: {fileID: 0}
 --- !u!212 &1135579941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -568,6 +569,7 @@ GameObject:
   - component: {fileID: 1547840899}
   - component: {fileID: 1547840898}
   - component: {fileID: 1547840897}
+  - component: {fileID: 1547840900}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -665,6 +667,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  isGrounded: 0
 --- !u!50 &1547840898
 Rigidbody2D:
   serializedVersion: 5
@@ -738,6 +741,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.8713217, y: 2.1849935}
   m_EdgeRadius: 0
+--- !u!95 &1547840900
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547840894}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aaf3a94353c09cb4cbbd188c1a8ab5b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1594702729
 GameObject:
   m_ObjectHideFlags: 0
