@@ -25,8 +25,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = IsGround();
-        animator.SetBool("IsGrounded", isGrounded);
+        
         
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -36,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
             //animator.SetFloat("JumpPower", jumpingPower);
-            animator.SetTrigger("Jump");
+            animator.SetBool("isJumping", true);
         }
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
         {
@@ -45,7 +44,9 @@ public class PlayerMovement : MonoBehaviour
             
         }
 
-       
+        isGrounded = IsGround();
+        animator.SetBool("IsGrounded", isGrounded);
+        if (!isGrounded && animator.GetBool("isJumping") ){ animator.SetBool("isJumping", false); }
 
         flip();
 
@@ -55,14 +56,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
-<<<<<<< HEAD
 
-=======
         //if (rb.linearVelocityX > 0.1f)
         //{
             animator.SetFloat("HorizontalVelocity",rb.linearVelocityX);
         //}
->>>>>>> chris-animator-dumb
     }
 
     private bool IsGround()
