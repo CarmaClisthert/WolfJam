@@ -12,8 +12,8 @@ public class DialogueTrigger : MonoBehaviour
         Debug.Log($"Object entered trigger: {other.gameObject.name}");
 
 
-
-      //  FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        
+        //  FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
 

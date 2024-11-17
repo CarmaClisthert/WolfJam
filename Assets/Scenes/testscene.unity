@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcPrefab: {fileID: 2138429532520339603, guid: 16d180e58787b704d94c28b0ccb9a347, type: 3}
-  npcSpawnProbability: 0.25
+  npcSpawnProbability: 0.5
 --- !u!212 &1566647517
 SpriteRenderer:
   m_ObjectHideFlags: 0
